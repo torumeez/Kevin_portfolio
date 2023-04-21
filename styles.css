@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.radial-gradient {
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    
+    /*Fallback if gradeints don't work */
+    background: #9b59b6;
+    /*Linear gradient... */
+    background: 
+      radial-gradient(
+       at center, #347cdb, #9b59b6
+      );
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+body {
+    display: flex;
+}
+
+header {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;   
+}
+
+.Logo1 {
+    font-family: 'Kolker Brush', cursive, sans-serif;
+    font-size: 50px;
+}
+
+.head-button{
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Kite One', sans-serif;
+}
+
+main {
+    display: flex;
+    margin: 8rem;
+    margin-top: 10rem;
+}
+
+.main-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hello-text{
+  font-size: 48px;
+  font-family: 'Kite One', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.below-text{
+  font-size: 40px;
+  font-family: 'Kite One', sans-serif;
+}
