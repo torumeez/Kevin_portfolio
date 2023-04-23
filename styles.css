@@ -1,144 +1,149 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
+height: 100%;
+}
+
+a {
+  color: white; /* default link color */
 }
 
 .radial-gradient {
-    top:0px;
-    left:0px;
-    height:100%;
-    width:100%;
-    
-    
-    /*Fallback if gradeints don't work */
-    background: #9b59b6;
-    /*Linear gradient... */
-    background: 
-      radial-gradient(
-       at center, #347cdb, #9b59b6
-      );
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  
+  
+  /*Fallback if gradeints don't work */
+  background: #9b59b6;
+  /*Linear gradient... */
+  background: 
+    radial-gradient(
+     at center, #347cdb, #9b59b6
+    );
 }
 
 .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #000000;
-  }
-  
-  .hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 header {
-    display: flex;
-    margin: 20px;
-    justify-content: space-between;
-    margin-top: 0;   
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  margin-top: 0;   
 }
 
 .Logo1 {
-    font-family: 'Kolker Brush', cursive, sans-serif;
-    font-size: 50px;
+  font-family: 'Kolker Brush', cursive, sans-serif;
+  font-size: 50px;
 }
 
 .head-button{
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    margin: 15px;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
 
 }
 
 .header-buttons{
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Kite One', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Kite One', sans-serif;
 }
 
 main {
-    margin: 0 8rem 8rem 8rem;
-    margin-top: 10rem;
+  margin: 0 8rem 8rem 8rem;
+  margin-top: 10rem;
 }
 
 .main-text{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+display: flex;
+justify-content: center;
+flex-direction: column;
 }
 
 .hello-text{
-  font-size: 48px;
-  font-family: 'Kite One', sans-serif;
-  margin-bottom: 2rem;
+font-size: 48px;
+font-family: 'Kite One', sans-serif;
+margin-bottom: 2rem;
 }
 
 .below-text{
-  font-size: 40px;
-  font-family: 'Kite One', sans-serif;
+font-size: 40px;
+font-family: 'Kite One', sans-serif;
 }
 
 .about-content {
-  display: flex;
-  justify-content: center;
-  margin: 20rem;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+justify-content: center;
+margin: 15rem;
+flex-direction: column;
+align-items: center;
 }
 
 .about-title {
-  font-size: 64px;
-  font-family: 'Kite One', sans-serif;
+font-size: 64px;
+font-family: 'Kite One', sans-serif;
 }
 
 .card {
-  position: relative;
-  height: 540px;
-  width: 504px;
-  box-shadow: none;
-  background: none;
+position: relative;
+height: 540px;
+width: 504px;
+box-shadow: none;
+background: none;
 }
 
 .card-side {
-  height: 35rem;
-  border-radius: 20px;
-  transition: all 0.8s ease;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 2rem;
-  color: white;
+height: 35rem;
+border-radius: 20px;
+transition: all 0.8s ease;
+backface-visibility: hidden;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 2rem;
+color: white;
 }
 
 .card-side.back {
-  transform: rotateY(-180deg);
-  background-color: #4158D0;
-  background-image: linear-gradient(160deg,#9b59b6 0%, #347cdb 100%);
+transform: rotateY(-180deg);
+background-color: #4158D0;
+background-image: linear-gradient(160deg,#9b59b6 0%, #347cdb 100%);
 }
 
 .card-side.front {
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #347cdb 0%, #9b59b6 100%);
+background-color: #0093E9;
+background-image: linear-gradient(160deg, #347cdb 0%, #9b59b6 100%);
 }
 
 .card:hover .card-side.front {
@@ -181,6 +186,15 @@ main {
   position: relative;
   border: 1px solid black;
   padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #347cdb 0%, #9b59b6 100%);
+  font-family: 'Kite One', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  border-radius: 30px;
 }
 
 .hidden-content {
@@ -194,10 +208,18 @@ main {
   color: white;
   padding: 20px;
   box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 1.3s ease-in;
+  font-size: 17px;
+  font-family: 'Kite One', sans-serif;
+  margin-bottom: 3px;
+  border-radius: 30px;
+  
 }
 
 .box:hover .hidden-content {
   display: block;
+  opacity: 1;
 }
 
 .work-title {
@@ -216,4 +238,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
 }
+
+.a-color {
+  color: white;
+}
+
