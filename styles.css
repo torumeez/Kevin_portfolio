@@ -25,14 +25,14 @@ a {
   /*Linear gradient... */
   background: 
     radial-gradient(
-     at center, #347cdb, #9b59b6
+     at center, #070709, #1b1871 
     );
 }
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #000000;
+  color: #ffffff;
 }
 
 .hover-underline-animation::after {
@@ -43,7 +43,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #ffffff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -63,6 +63,7 @@ header {
 .Logo1 {
   font-family: 'Kolker Brush', cursive, sans-serif;
   font-size: 50px;
+  color: white;
 }
 
 .head-button{
@@ -88,12 +89,14 @@ main {
 display: flex;
 justify-content: center;
 flex-direction: column;
+color: white;
 }
 
 .hello-text{
 font-size: 48px;
 font-family: 'Kite One', sans-serif;
 margin-bottom: 2rem;
+color: white;
 }
 
 .below-text{
@@ -107,6 +110,7 @@ justify-content: center;
 margin: 15rem;
 flex-direction: column;
 align-items: center;
+color: white;
 }
 
 .about-title {
@@ -137,13 +141,11 @@ color: white;
 
 .card-side.back {
 transform: rotateY(-180deg);
-background-color: #4158D0;
-background-image: linear-gradient(160deg,#9b59b6 0%, #347cdb 100%);
+background-image: linear-gradient( 111.4deg, rgba(27,24,113,1) 6.5%,  rgba(7,7,9,1) 93.2% );
 }
 
 .card-side.front {
-background-color: #0093E9;
-background-image: linear-gradient(160deg, #347cdb 0%, #9b59b6 100%);
+  background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
 }
 
 .card:hover .card-side.front {
@@ -158,7 +160,7 @@ background-image: linear-gradient(160deg, #347cdb 0%, #9b59b6 100%);
   font-size: 32px;
   font-family: 'Kite One', sans-serif;
   margin-top: 20px;
-  color: #000000  ;
+  color: #ffffff  ;
 }
 
 .box-text {
@@ -187,14 +189,15 @@ background-image: linear-gradient(160deg, #347cdb 0%, #9b59b6 100%);
   border: 1px solid black;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #347cdb 0%, #9b59b6 100%);
+  background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
   font-family: 'Kite One', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 35px;
   border-radius: 30px;
+  margin-bottom: 10rem;
+  color: white;
 }
 
 .hidden-content {
@@ -225,6 +228,7 @@ background-image: linear-gradient(160deg, #347cdb 0%, #9b59b6 100%);
 .work-title {
   font-size: 64px;
   font-family: 'Kite One', sans-serif;
+  color: white;
 }
 
 .work-content {
@@ -232,6 +236,7 @@ background-image: linear-gradient(160deg, #347cdb 0%, #9b59b6 100%);
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .box-align {
@@ -244,4 +249,59 @@ background-image: linear-gradient(160deg, #347cdb 0%, #9b59b6 100%);
 .a-color {
   color: white;
 }
+
+footer {
+  background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+  padding: 20px 0;
+  border-radius: 15px 15px 0px 0px;
+  border: 1px solid black;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-4 {
+  width: 33.33%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Kite One', sans-serif;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: 'Kite One', sans-serif;
+}
+
+li i {
+  margin-right: 10px;
+}
+
+
+
+
+
 
