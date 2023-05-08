@@ -307,6 +307,91 @@ li i {
   margin-right: 10px;
 }
 
+@media only screen and (max-width: 375px) {
+  header {
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 0;
+  }
+
+  .Logo1 {
+    font-size: 40px;
+  }
+
+  .header-buttons {
+    display: none;
+  }
+
+  /* Show the hamburger menu */
+  .hamburger-menu {
+    display: flex;
+  }
+
+  /* Rotate and position the top and bottom spans */
+  .hamburger-menu span:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: left center;
+  }
+
+  .hamburger-menu span:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: right center;
+  }
+}
+
+  main {
+    margin: 0 1rem 8rem 1rem;
+    margin-top: 7rem;
+  }
+
+  .hello-text {
+    font-size: 32px;
+  }
+
+  .below-text {
+    font-size: 28px;
+  }
+
+  .about-content {
+    margin: 5rem;
+  }
+
+  .about-title {
+    font-size: 48px;
+  }
+
+  .card {
+    height: 400px;
+    width: 350px;
+  }
+
+  .card-side {
+    height: 25rem;
+    padding: 1rem;
+  }
+
+  .front-box-text {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .back-side-picture {
+    border-radius: 20%;
+  }
+
+  .backside-text {
+    font-size: 18px;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    font-size: 28px;
+    margin-bottom: 5rem;
+  }
+}
+
+
 
 
 
